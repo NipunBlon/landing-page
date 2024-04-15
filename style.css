@@ -8,6 +8,8 @@ body {
     padding: 0;
 }
 
+/* Header */
+
 header .logo img {
     width: 150px;
     height: 150px;
@@ -15,7 +17,6 @@ header .logo img {
 }
 
 header {
-    padding-bottom: 20%;
     padding-top: 2%;
     font-size: 24px;
     color: #F9FAF8;
@@ -42,6 +43,7 @@ header {
 header .links ul{
     gap: 20px;
     display: flex;
+    gap: 20px;
 }
 
 header .links ul li {
@@ -55,4 +57,45 @@ header .links ul li a {
 
 header .links ul li a:hover {
     color: #cacaca;
+}
+
+/* Main */
+main .intro {
+    justify-content: space-between;
+    display: flex;
+    color: white;
+    background-color: #1F2937;
+    padding: 7%;
+}
+main .intro .content h2 {
+    margin-top: 0;
+    font-size: 48px;
+}
+
+main .intro .content p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button{
+    border: none;
+    width: 100px;
+    height: 30px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: white;
+}
+
+main .intro .content img {
+    width: 75%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #76a7f7;
+}
+
+button:active {
+    color: grey;
+    background-color: #76a7f7;
 }
