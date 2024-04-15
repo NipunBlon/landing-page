@@ -42,6 +42,7 @@ header {
 
 header .links ul{
     gap: 20px;
+    flex-wrap: wrap;
     display: flex;
     gap: 20px;
 }
@@ -59,8 +60,10 @@ header .links ul li a:hover {
     color: #cacaca;
 }
 
-/* Main */
+/* Introduction */
+
 main .intro {
+    flex-wrap: wrap;
     justify-content: space-between;
     display: flex;
     color: white;
@@ -87,6 +90,7 @@ button{
 }
 
 main .intro .content img {
+    flex-wrap: wrap;
     width: 75%;
 }
 
@@ -98,4 +102,61 @@ button:hover {
 button:active {
     color: grey;
     background-color: #76a7f7;
+}
+
+/* Info */
+
+main .info {
+    padding: 100px;
+}
+main .info .me{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 20px;
+}
+
+main .info h2 {
+    font-size: 36px;
+    color: #1F2937;
+    padding: 20px;
+    text-align: center;
+}
+
+main .info .imgbox p {
+    text-align: center;
+}
+
+main .info .imgbox img{
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+    width: 210px;
+    height: 210px;
+}
+
+main .quote {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    height: 400px;
+    flex-direction: column;
+}
+
+#quote {
+    font-size: 36px;
+    color: #1F2937;
+}
+
+#author {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #1F2937;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
 }
